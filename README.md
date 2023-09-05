@@ -1,1 +1,1 @@
-# anime-random-quotes-generator
+# random-quotes-generator
