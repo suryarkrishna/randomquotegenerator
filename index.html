@@ -18,50 +18,22 @@
     <link rel="icon" href="res/favicon.svg">
 
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <title>Radnom Anime Quote Generator | By Abdellatif Laghjaj</title>
+    <title>Radnom Quote Generator</title>
 </head>
 <div class="modal-container"></div>
 <body>
-
-    <!-- Copyright -->
-    <div class="author-text">
-        <p>Made with ❤️
-            by <a href="https://github.com/abdellatif-laghjaj" target="_blank">
-                <b>Abdellatif Laghjaj</b>
-            </a>
-        </p>
-    </div>
-
     <div class="mockup-window border bg-base-300">
         <div class="container">
             <header class="mb-5">
-                <h1 class="text-center text-2xl font-bold mb-4">Random Anime Quote Generator</h1>
-                <div class="form-control">
-                    <div class="input-group">
-                        <select class="select select-bordered" id="search_by">
-                            <option selected>Search By</option>
-                            <option value="by_name">By Anime Name</option>
-                            <option value="by_character">By Character Name</option>
-                        </select>
-                        <input type="text" placeholder="Search ..." class="input input-accent input-bordered" />
-                        <button class="btn btn-accent btn-square search_btn" id="">
-                            <i class="bx bx-search bx-sm"></i>
-                        </button>
-                    </div>
-                </div>
+                <h1 class="text-center text-2xl font-bold">Random Quote Generator</h1>
             </header>
 
             <div class="main-content">
-                <h1 class="text-2xl font-bold" id="anime_name">
-                    Fairy Tail
-                </h1>
                 <div class="max-w-4xl p-4 rounded-lg">
                     <div class="mb-2">
                         <div class="h-3 text-2xl text-left"><i class='bx bxs-quote-alt-left mr-2'></i></div>
                         <p class="px-4 text-xl text-center mt-2" id="quote">
-                            Even if I can't see. Even if I can't hear. I have light inside me. The path I walked with my
-                            friends, is bringing light to my future. I don't fear anything! This isn't even worthy of
-                            being called pain! The worst pain is.. The pain of losing your light.
+                            Loading...
                         </p>
                         <div class="h-3 text-2xl text-right"><i class='bx bxs-quote-alt-right ml-2'></i></div>
                     </div>
@@ -70,7 +42,7 @@
                 <div class="bottom-content">
                     <p class="author italic">
                         <i class='bx bxl-slack-old mr-2'></i>
-                        <span id="character">Erza Scarlet</span>
+                        <span id="author">Loading...</span>
                     </p>
 
                     <button class="btn btn-accent gap-2" id="random_btn">
@@ -88,7 +60,7 @@
             <label tabindex="0" class="btn m-1">
                 <i class='bx bxs-palette bx-sm'></i>
             </label>
-            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+            <ul tabindex="0" id="theme-list" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                 <li class="theme-item" theme="cupcake"><a>cupcake</a></li>
                 <li class="theme-item" theme="dark"><a>dark</a></li>
                 <li class="theme-item" theme="light"><a>light</a></li>
